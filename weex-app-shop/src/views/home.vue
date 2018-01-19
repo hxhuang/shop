@@ -1,19 +1,35 @@
 <template>
     <div class="app-container">
-        <scroller>
+        <scroller class="scroller" show-scrollbar="true">
             <refresh class="refresh" @refresh="onrefresh" @pullingdown="onpullingdown"
                      :display="refreshing ? 'show' : 'hide'">
                 <text class="indicator-text">下拉刷新</text>
-                <loading-indicator class="indicator"></loading-indicator>
+                <loading-indicator class="loading-indicator"></loading-indicator>
             </refresh>
             <search></search>
             <banner :banners="banners"></banner>
             <category :categorys="categorys"></category>
             <special-area :specials="specials"></special-area>
+            <store></store>
         </scroller>
     </div>
 </template>
 <style scoped>
+    .app-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 5px;
+        background-color: #F0F0F0;
+    }
+
+    .scroller {
+        flex: 1;
+        width: 750px;
+    }
+
     .refresh {
         width: 750px;
         display: -ms-flex;
@@ -31,7 +47,7 @@
         text-align: center;
     }
 
-    .indicator {
+    .loading-indicator {
         margin-top: 16px;
         height: 40px;
         width: 40px;
@@ -43,12 +59,14 @@
     import Banner from "../components/banner.vue";
     import Category from "../components/category.vue";
     import SpecialArea from "../components/special/specialArea.vue";
-
+    import Store from "../components/nearby/store.vue";
+    import global from '../api/global';
 
     const modal = weex.requireModule('modal');
 
     export default {
         components: {
+            Store,
             SpecialArea,
             Category,
             Banner,
@@ -58,22 +76,44 @@
             return {
                 refreshing: false,
                 banners: [
-                    {src: 'https://gd2.alicdn.com/bao/uploaded/i2/T14H1LFwBcXXXXXXXX_!!0-item_pic.jpg'},
-                    {src: 'https://gd1.alicdn.com/bao/uploaded/i1/TB1PXJCJFXXXXciXFXXXXXXXXXX_!!0-item_pic.jpg'},
-                    {src: 'https://gd3.alicdn.com/bao/uploaded/i3/TB1x6hYLXXXXXazXVXXXXXXXXXX_!!0-item_pic.jpg'}
+                    {src: global.resource.URL + '/banner/huoguojie.jpg'},
+                    {src: global.resource.URL + '/banner/Invitation.jpg'},
+                    {src: global.resource.URL + '/banner/pangxie.jpg'}
                 ],
-                categorys:[
-                    {img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/class_icon/9faf7ba1-972b-4390-8ec8-350896f4d52b.png',title:'水果'},
-                    {img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/class_icon/9faf7ba1-972b-4390-8ec8-350896f4d52b.png',title:'蔬菜'},
-                    {img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/class_icon/9faf7ba1-972b-4390-8ec8-350896f4d52b.png',title:'猪肉'},
-                    {img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/class_icon/9faf7ba1-972b-4390-8ec8-350896f4d52b.png',title:'猪肉'},
-                    {img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/class_icon/9faf7ba1-972b-4390-8ec8-350896f4d52b.png',title:'水产'}
+                categorys: [
+                    {
+                        id: 1,
+                        type: 1,
+                        img: global.resource.URL + '/fruits.png',
+                        title: '新鲜果蔬'
+                    },
+                    {
+                        id: 2,
+                        type: 2,
+                        img: global.resource.URL + '/pork.png',
+                        title: '优选猪肉'
+                    },
+                    {
+                        id: 3,
+                        type: 3,
+                        img: global.resource.URL + '/poultry.png',
+                        title: '活鲜水产'
+                    },
+                    {
+                        id: 4,
+                        type: 4,
+                        img: global.resource.URL + '/half.png',
+                        title: '半成品类'
+                    }
 
                 ],
-                specials:[
-                    {id:123,type:1,img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/marketactivity/717573479354847232/2018-01-10/cfe2c211-7555-4b64-8645-f91f6d86a361.jpg'},
-                    {id:124,type:0,img:'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/marketactivity/717573479354847232/2018-01-10/cfe2c211-7555-4b64-8645-f91f6d86a361.jpg'}
-                    ]
+                specials: [
+                    {
+                        id: 123,
+                        type: 1,
+                        img: 'https://s3.cn-north-1.amazonaws.com.cn/www.taocaimall.com/img/upload/marketactivity/717573479354847232/2018-01-10/cfe2c211-7555-4b64-8645-f91f6d86a361.jpg'
+                    }
+                ]
 
             }
         },
@@ -83,7 +123,7 @@
                 this.refreshing = true;
                 setTimeout(() => {
                     this.refreshing = false
-                }, 2000)
+                }, 2000);
 
                 console.log('onrefresh + ' + event)
             },

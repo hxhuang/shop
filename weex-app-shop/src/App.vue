@@ -1,6 +1,3 @@
-<!-- CopyRight (C) 2017-2022 Alibaba Group Holding Limited. -->
-<!-- Created by Tw93 on 17/03/31. -->
-
 <template>
     <wxc-tab-bar :tab-titles="tabTitles"
                  :tab-styles="tabStyles"
@@ -17,8 +14,6 @@
     .item-container {
         width: 750px;
         background-color: #f2f3f4;
-        /*align-items: center;*/
-        /*justify-content: center;*/
     }
 </style>
 <script>

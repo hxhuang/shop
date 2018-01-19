@@ -29,12 +29,9 @@
     }
 
     .slider {
-        margin-top: 25px;
+        margin-top: 5px;
         width: 750px;
         height: 350px;
-        border-width: 2px;
-        border-style: solid;
-        border-color: #41B883;
     }
 
     .frame {
@@ -45,12 +42,10 @@
 
     .indicator {
         width: 750px;
-        height: 700px;
-        item-color: green;
+        height: 650px;
+        item-color: white;
         item-selected-color: red;
-        item-size: 50px;
+        item-size: 16px;
         position: absolute;
-        top: 200px;
-        left: 200px;
     }
 </style>
