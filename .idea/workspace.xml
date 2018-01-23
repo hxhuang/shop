@@ -1,50 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63850c69-3b19-46c2-a813-7d515a047661" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/quick/framework/shop/admin/controller/TestController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/quick/framework/shop/admin/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/quick/framework/shop/admin/permission/UserPermission.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/quick/framework/shop/config/SecurityConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/java/quick/framework/shop/event/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-admin/src/main/resources/templates/index.ftl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-common/src/main/java/quick/framework/common/event/BaseEvent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-common/src/main/java/quick/framework/common/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-common/src/main/java/quick/framework/common/resp/Response.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-common/src/main/java/quick/framework/common/resp/SimpleResp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-model/src/main/java/quick/framework/shop/model/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-service/src/main/java/quick/framework/shop/service/IService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-service/src/main/java/quick/framework/shop/service/admin/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-service/src/main/java/quick/framework/shop/service/test/TestService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-service/src/main/java/quick/framework/shop/service/user/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/admin/controller/TestController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/admin/controller/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/aspect/WebRequestLoggerAspect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/aspect/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/config/SwaggerConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/constants/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/event/package-info.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/exception/AppException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/shop-view/src/main/java/quick/framework/shop/exception/ShopHandlerAdvice.java" />
-    </list>
+    <list default="true" id="63850c69-3b19-46c2-a813-7d515a047661" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/shop-view/target/" />
@@ -153,7 +110,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="459" />
     <option name="width" value="898" />
     <option name="height" value="745" />
@@ -736,15 +693,15 @@
       <option name="presentableId" value="Default" />
       <updated>1516091129458</updated>
       <workItem from="1516091133231" duration="1339000" />
-      <workItem from="1516092501180" duration="9741000" />
+      <workItem from="1516092501180" duration="10339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11080000" />
+    <option name="totallyTimeSpent" value="11678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="0" width="898" height="745" extended-state="1" />
+    <frame x="459" y="0" width="898" height="745" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -755,7 +712,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64542484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4722222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4722222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21354656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
