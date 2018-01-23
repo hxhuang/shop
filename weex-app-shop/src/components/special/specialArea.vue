@@ -1,3 +1,4 @@
+<!-- 专区推荐 -->
 <template>
     <div class="wrapper">
         <div class="special-area" v-for="special in specials" @click="jumpToDetail(special.id,special.type)">

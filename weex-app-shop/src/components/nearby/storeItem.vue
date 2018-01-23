@@ -123,7 +123,7 @@
     }
 </style>
 
-<script>
+    <script>
     const expressionBinding = weex.requireModule('expressionBinding');
     import { WxcRichText, WxcSpecialRichText, Utils } from 'weex-ui';
 

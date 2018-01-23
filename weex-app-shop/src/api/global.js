@@ -1,3 +1,3 @@
 exports.resource = {
-    URL: 'http://127.0.0.1:8080/resources/images'
+    URL: 'http://192.168.199.101:8080/resources/images'
 };

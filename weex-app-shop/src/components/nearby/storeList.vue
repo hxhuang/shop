@@ -1,7 +1,7 @@
 <template>
     <div class="nearby-store">
         <div class="nearby-store-title">
-            <text style="font-size: 36px">———— 附近的店铺一樣 ————</text>
+            <text style="font-size: 36px">———— 附近的店铺 ————</text>
         </div>
         <div class="item-container"
              :style="{ height: (tabPageHeight - 120) + 'px' }">
@@ -11,11 +11,11 @@
                  :key="index"
                  @click="storeDetail">
                 <store-item :image="store.storeImg"
-                            :title="store.storeName"
-                            :desc="store.desc"
-                            :tags="store.tags"
-                            :price="store.storePrice"
-                            :price-desc="store.priceDesc"></store-item>
+                           :title="store.storeName"
+                           :desc="store.desc"
+                           :tags="store.tags"
+                           :price="store.storePrice"
+                           :price-desc="store.priceDesc"></store-item>
             </div>
         </div>
     </div>
@@ -26,12 +26,13 @@
     import StoreItem from './storeItem.vue';
 
     export default {
+        name: 'store-list',
         components: {WxcTabPage, WxcPanItem, StoreItem},
         data: () => ({
             stores: [
                 {
-                    id:1,
-                    title:'四川旅游',
+                    id: 1,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试',
                     priceDesc: '月售58笔｜999+条评论',
@@ -48,8 +49,8 @@
                     }]
                 },
                 {
-                    id:2,
-                    title:'四川旅游',
+                    id: 2,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试1',
                     priceDesc: '月售58笔｜999+条评论',
@@ -66,8 +67,8 @@
                     }]
                 },
                 {
-                    id:3,
-                    title:'四川旅游',
+                    id: 3,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试2',
                     priceDesc: '月售58笔｜999+条评论',
@@ -84,8 +85,8 @@
                     }]
                 },
                 {
-                    id:4,
-                    title:'四川旅游',
+                    id: 4,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试3',
                     priceDesc: '月售58笔｜999+条评论',
@@ -102,8 +103,8 @@
                     }]
                 },
                 {
-                    id:5,
-                    title:'四川旅游',
+                    id: 5,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试4',
                     priceDesc: '月售58笔｜999+条评论',
@@ -120,8 +121,8 @@
                     }]
                 },
                 {
-                    id:6,
-                    title:'四川旅游',
+                    id: 6,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试5',
                     priceDesc: '月售58笔｜999+条评论',
@@ -138,8 +139,8 @@
                     }]
                 },
                 {
-                    id:7,
-                    title:'四川旅游',
+                    id: 7,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试6',
                     priceDesc: '月售58笔｜999+条评论',
@@ -156,8 +157,8 @@
                     }]
                 },
                 {
-                    id:8,
-                    title:'四川旅游',
+                    id: 8,
+                    title: '四川旅游',
                     storeImg: 'https://gw.alicdn.com/i1/2935198750/TB26GMgeOC9MuFjSZFoXXbUzFXa_!!2935198750.jpg',
                     storeName: '卡片测试7',
                     priceDesc: '月售58笔｜999+条评论',
@@ -191,7 +192,6 @@
         }),
         created() {
             this.tabPageHeight = Utils.env.getPageHeight();
-            console.log('tabPageHeight' + this.tabPageHeight);
         },
         methods: {
             wxcPanItemPan(e) {
@@ -206,9 +206,10 @@
 </script>
 
 <style scoped>
-    .nearby-store{
+    .nearby-store {
         background-color: #FFF;
     }
+
     .nearby-store-title {
         align-items: center;
     }

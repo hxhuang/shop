@@ -1,3 +1,4 @@
+<!-- 首页banner推荐-->
 <template>
     <slider class="slider" interval="3000" auto-play="true" @click="jumpToDetail">
         <div class="frame" v-for="img in banners">

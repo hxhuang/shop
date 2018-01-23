@@ -10,7 +10,7 @@
             <banner :banners="banners"></banner>
             <category :categorys="categorys"></category>
             <special-area :specials="specials"></special-area>
-            <store></store>
+            <store-list></store-list>
         </scroller>
     </div>
 </template>
@@ -56,17 +56,17 @@
 </style>
 <script>
     import Search from "../components/search.vue";
-    import Banner from "../components/banner.vue";
+    import Banner from "../components/banner/banner.vue";
     import Category from "../components/category.vue";
     import SpecialArea from "../components/special/specialArea.vue";
-    import Store from "../components/nearby/store.vue";
+    import StoreList from "../components/nearby/storeList.vue";
     import global from '../api/global';
 
     const modal = weex.requireModule('modal');
 
     export default {
         components: {
-            Store,
+            StoreList,
             SpecialArea,
             Category,
             Banner,

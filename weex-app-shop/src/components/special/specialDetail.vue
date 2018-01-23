@@ -1,3 +1,4 @@
+<!-- 专区推荐详情 -->
 <template>
     <div class="special-detail">
         <text>Special Detail</text>
@@ -11,7 +12,7 @@
 </script>
 
 <style scoped>
-.special-detail{
+    .special-detail {
 
-}
+    }
 </style>

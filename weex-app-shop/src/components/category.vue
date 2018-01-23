@@ -1,3 +1,4 @@
+<!-- 首页分类 -->
 <template>
     <div class="category">
         <div style="flex-direction: row">
