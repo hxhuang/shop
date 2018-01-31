@@ -9,7 +9,7 @@ public class UploadTokenTests {
 
     @Test
     public void testUploadToken() {
-        File file = new File("E:/workspace/shop/apache-tomat-8.0.48/webapps/resources/images");
+        File file = new File("C:/Users/sigui/Desktop/images");
 
         File[] files = file.listFiles();
         for (File f : files) {

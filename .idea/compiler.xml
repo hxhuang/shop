@@ -19,7 +19,6 @@
       <module name="shop-common" target="1.8" />
       <module name="shop-model" target="1.8" />
       <module name="shop-service" target="1.8" />
-      <module name="shop-service-api" target="1.5" />
       <module name="shop-view" target="1.8" />
     </bytecodeTargetLevel>
   </component>

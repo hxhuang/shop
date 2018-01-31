@@ -62,7 +62,7 @@ exports.QRCapacityTable = [
 * canvas example and fallback support example provided by Joshua Koo
 *	http://jabtunes.com/labs/qrcode.html
 *	"Instant QRCode Mashup by Joshua Koo!"
-*	as far as i can tell the page and the code on the page are public domain 
+*	as far as i can tell the pages and the code on the pages are public domain
 *	
 * original table example and library provided by Kazuhiko Arase
 *	http://d-project.googlecode.com/svn/trunk/misc/qrcode/js/
@@ -1255,7 +1255,7 @@ QRRSBlock.RS_BLOCK_TABLE = [
 [6, 43, 19, 2, 44, 20],
 [6, 43, 15, 2, 44, 16]
 //NOTE added by Ryan Day.to make greater than version 10 qrcodes
-// this table starts on page 40 of the spec PDF. google ISO/IEC 18004
+// this table starts on pages 40 of the spec PDF. google ISO/IEC 18004
 // 11
 ,[4,101,81]
 ,[1,80,50,4,81,51]

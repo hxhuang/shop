@@ -1,6 +1,6 @@
 <template>
     <div class="app-container">
-        <scroller class="scroller" show-scrollbar="true">
+        <scroller class="scroller" show-scrollbar="false">
             <refresh class="refresh" @refresh="onrefresh" @pullingdown="onpullingdown"
                      :display="refreshing ? 'show' : 'hide'">
                 <text class="indicator-text">下拉刷新</text>
@@ -76,33 +76,33 @@
             return {
                 refreshing: false,
                 banners: [
-                    {src: global.resource.URL + '/banner/huoguojie.jpg'},
-                    {src: global.resource.URL + '/banner/Invitation.jpg'},
-                    {src: global.resource.URL + '/banner/pangxie.jpg'}
+                    {src:'http://p323gwkn4.bkt.clouddn.com/images/banner/2018/01/24/huoguojie.jpg'},
+                    {src: 'http://p323gwkn4.bkt.clouddn.com/images/banner/2018/01/24/Invitation.jpg'},
+                    {src: 'http://p323gwkn4.bkt.clouddn.com/images/banner/2018/01/24/pangxie.jpg'}
                 ],
                 categorys: [
                     {
                         id: 1,
                         type: 1,
-                        img: global.resource.URL + '/fruits.png',
+                        img: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/fruits.png',
                         title: '新鲜果蔬'
                     },
                     {
                         id: 2,
                         type: 2,
-                        img: global.resource.URL + '/pork.png',
+                        img: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/pork.png',
                         title: '优选猪肉'
                     },
                     {
                         id: 3,
                         type: 3,
-                        img: global.resource.URL + '/poultry.png',
+                        img: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/poultry.png',
                         title: '活鲜水产'
                     },
                     {
                         id: 4,
                         type: 4,
-                        img: global.resource.URL + '/half.png',
+                        img: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/half.png',
                         title: '半成品类'
                     }
 

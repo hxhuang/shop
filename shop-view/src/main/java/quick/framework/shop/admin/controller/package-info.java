@@ -1,1 +1,0 @@
-package quick.framework.shop.admin.controller;

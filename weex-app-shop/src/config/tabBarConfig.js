@@ -5,27 +5,27 @@ export default {
         {
             title: '首页',
             codePoint: '&#xe623;',
-            icon: 'http://192.168.199.101:8080/resources/images/icon/home.png',
-            activeIcon: 'http://192.168.199.101:8080/resources/images/icon/home_fill.png'
+            icon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/home.png',
+            activeIcon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/home_fill.png'
         },
         {
             title: '推荐',
             codePoint: '&#xe608;',
-            icon: 'http://192.168.199.101:8080/resources/images/icon/hot.png',
-            activeIcon: 'http://192.168.199.101:8080/resources/images/icon/hot_fill.png'
+            icon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/hot.png',
+            activeIcon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/hot_fill.png'
         },
         {
             title: '购物车',
             codePoint: '&#xe6b0;',
-            icon: 'http://192.168.199.101:8080/resources/images/icon/cart.png',
-            activeIcon: 'http://192.168.199.101:8080/resources/images/icon/cart_fill.png',
+            icon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/cart.png',
+            activeIcon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/cart_fill.png',
             badge: 6
         },
         {
             title: '我的',
             codePoint: '&#xe601;',
-            icon: 'http://192.168.199.101:8080/resources/images/icon/people.png',
-            activeIcon: 'http://192.168.199.101:8080/resources/images/icon/people_fill.png'
+            icon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/people.png',
+            activeIcon: 'http://p323gwkn4.bkt.clouddn.com/images/icon/2018/01/24/people_fill.png'
         }
     ],
     tabStyles: {
